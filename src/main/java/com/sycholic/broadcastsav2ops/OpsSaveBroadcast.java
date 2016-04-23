@@ -38,7 +38,7 @@ public class OpsSaveBroadcast extends JavaPlugin implements Listener {
     @Override
     public void onEnable() {
         getServer().getPluginManager().registerEvents(this, this);
-        }
+    }
     
     @EventHandler(priority = EventPriority.MONITOR, ignoreCancelled = true)
     public void broadcastOps(WorldSaveEvent e) {
@@ -47,5 +47,5 @@ public class OpsSaveBroadcast extends JavaPlugin implements Listener {
                 e.getWorld().getPlayers().get(i).sendMessage("Server is being saved now.");
             }
         }
-        }
     }
+}
